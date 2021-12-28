@@ -1,0 +1,45 @@
+.tasks {
+  &__title {
+    margin-bottom: 35px;
+    font-family: TTHoves-Light;
+    color: var(--grey-text);
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    font-family: TTHoves-Regular;
+    font-size: 22px;
+    line-height: 36px;
+
+    // width: 30%;
+
+    &:first-child {
+      max-width: 35%;
+      min-width: 29%;
+    }
+
+    &:nth-child(2) {
+      width: 50%;
+    }
+  }
+
+  &__numbers {
+    font-family: SFPro;
+    font-size: 200px;
+    line-height: 100%;
+
+    color: var(--grey-color);
+
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,77 @@
+// Portfolio
+
+.portfolio {
+  min-width: 1170px;
+
+  &__container {
+    flex-wrap: wrap;
+    row-gap: 25px;
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+
+  &__block--info {
+    min-width: 570px;
+    min-height: 255px;
+
+    background: linear-gradient(var(--black-filler), var(--black-filler)),
+      url('../img/recreation_1.jpg');
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    transition: all var(--animation);
+    border: 2px solid var(--white-text);
+  }
+
+  &__block--info:hover,
+  &__block--info:focus {
+    border-radius: 40px;
+    border: 2px solid var(--hover-text);
+    transition: all var(--animation);
+  }
+
+  &__block--title {
+    text-transform: uppercase;
+
+    font-family: TTHoves-Bold;
+    font-size: 64px;
+
+    color: var(--white-text);
+  }
+
+  &__title-text {
+    font-family: 'Gothic A1', sans-serif;
+    pointer-events: none;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+    padding-top: 8px;
+  }
+
+  &__link {
+    color: var(--white-text);
+    text-decoration: none;
+    transition: all var(--animation);
+  }
+
+  &__link:hover &__title-text,
+  &__link:focus &__title-text {
+    color: var(--hover-text);
+    transition: color var(--animation);
+  }
+
+  &__image {
+    width: 100%;
+  }
+}

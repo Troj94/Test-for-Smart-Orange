@@ -1,0 +1,95 @@
+// Footer styles
+
+.footer {
+  background-color: var(--footer-color);
+  color: var(--white-text);
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &__container {
+    height: 347px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1170px;
+  }
+
+  &__info-block {
+    padding-top: 58px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: normal;
+  }
+
+  &__title {
+    font-family: TTHoves-Bold;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  &__list,
+  &__item {
+    font-family: TTHoves-Medium;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    font-family: TTHoves-Medium;
+
+    color: var(--white-text);
+    text-decoration: none;
+    transition: all var(--animation);
+
+    border-bottom: 1px solid transparent;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: var(--hover-text);
+    border-color: var(--hover-text);
+  }
+
+  &__list--social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__link--social:hover,
+  &__link--social:focus {
+    border-color: rgba(7, 7, 7, 0);
+  }
+
+  &__icon {
+    margin-right: 10px;
+    margin-bottom: -2px;
+    fill: currentColor;
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    fill: currentColor;
+  }
+
+  &__list--social &__icon {
+    margin-right: 0;
+  }
+}
+
+.license-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 -15px;
+
+  height: 70px;
+
+  color: var(--transparent-text);
+  border-top: 1px solid rgba(216, 216, 216, 0.5);
+}

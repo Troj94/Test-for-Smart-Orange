@@ -1,0 +1,72 @@
+.button {
+  display: block;
+  width: 220px;
+  height: 70px;
+
+  color: var(--white-text);
+  background-color: var(--black-text);
+
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  transition: all var(--animation);
+
+  &:hover {
+    color: var(--hover-text);
+    border: 2px solid var(--hover-text);
+    border-radius: 10px;
+    transition: all var(--animation);
+  }
+
+  &:active {
+    background-color: var(--black-filler);
+  }
+
+  &--white {
+    color: var(--black-text);
+    background-color: var(--white-text);
+    border-color: transparent;
+
+    &:hover {
+      color: var(--black-text);
+      font-size: 16px;
+    }
+
+    &:active {
+      background-color: var(--grey-text);
+    }
+  }
+}
+
+.button--portfolio-button {
+  margin-left: auto;
+
+  &:active {
+    background-color: var(--black-filler);
+  }
+}
+
+.project__button {
+  width: 53px;
+  height: 53px;
+  background-color: var(--grey-color-background);
+  border: 2px solid white;
+  transition: all var(--animation);
+  cursor: pointer;
+
+  &:first-child {
+    margin-right: 23px;
+  }
+
+  &:hover {
+    border: 2px solid var(--hover-text);
+    border-radius: 10px;
+    transition: all var(--animation);
+  }
+  &:active {
+    background-color: var(--grey-text);
+  }
+}

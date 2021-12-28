@@ -1,0 +1,60 @@
+.project {
+  display: flex;
+  justify-content: space-between;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    align-self: center;
+  }
+
+  &__title {
+    font-family: TTHoves-Light;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 100;
+    color: var(--grey-text);
+    text-transform: uppercase;
+    padding-top: 100%;
+    padding-bottom: 90px;
+
+    p {
+      font-family: TTHoves-Bold;
+      color: var(--black-text);
+    }
+  }
+
+  &__thumb {
+    max-width: 100%;
+  }
+
+  &__image {
+    max-width: 100%;
+    width: 770px;
+    height: auto;
+  }
+
+  &__buttons-block {
+    margin-bottom: 90px;
+  }
+
+  &__numbers-block {
+    display: flex;
+  }
+
+  &__number {
+    font-family: TTHoves-Regular;
+    font-size: 24px;
+    line-height: 24px;
+    color: var(--grey-text);
+  }
+
+  &__icon {
+    position: relative;
+    top: -5px;
+    margin: 0 30px;
+
+    fill: var(--grey-text);
+  }
+}

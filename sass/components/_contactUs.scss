@@ -1,0 +1,123 @@
+// Contact with us
+
+.contactUs-block {
+  margin-bottom: 120px;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+    font-family: TTHoves-Light;
+    color: var(--grey-text);
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+  }
+}
+
+.form {
+  // margin-bottom: 50px;
+  margin-right: 30px;
+  max-width: 390px;
+  width: 100%;
+
+  &__input {
+    font-size: 14px;
+    resize: none;
+    margin-bottom: 10px;
+    padding: 0 0 0 10px;
+    height: 45px;
+    width: 100%;
+    border: 1px solid transparent;
+    background-color: var(--grey-color);
+
+    &--textArea {
+      height: 129px;
+      padding: 10px 0 0 10px;
+    }
+
+    &:focus::placeholder {
+      opacity: 0;
+      transition: opacity var(--animation);
+    }
+  }
+}
+
+.checkbox-block {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+span {
+  display: block;
+  font-size: 14px;
+}
+
+#checkbox {
+  opacity: 0;
+}
+
+.fa-square-o {
+  position: relative;
+  pointer-events: none;
+  z-index: 50;
+  display: block;
+
+  color: var(--black-text);
+}
+
+.fa-check {
+  position: relative;
+  pointer-events: none;
+  z-index: 50;
+  display: block;
+
+  right: 29px;
+  top: -1px;
+
+  color: var(--hover-text);
+
+  opacity: 0;
+  transform: scale(3) rotateZ(-20deg);
+  transition: all var(--animation);
+}
+
+.checkbox-block input[type='checkbox']:checked + .fa-square-o + .fa-check {
+  opacity: 1;
+  transform: scale(1) rotateZ(0deg);
+  transition: all var(--animation);
+}
+
+.checkbox-block input[type='checkbox']:checked + .fa-square-o + .fa-check {
+  opacity: 1;
+  transform: scale(1) rotateZ(0deg);
+  transition: all var(--animation);
+}
+
+.contactUs__link {
+  color: var(--black-text);
+  transition: all var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-text);
+    transition: all var(--animation);
+  }
+}
+
+.image {
+  width: 100%;
+  max-width: 749px;
+}
+
+.thumb {
+  width: 100%;
+}
